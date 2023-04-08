@@ -69,7 +69,20 @@ def the_smallest_city():
     pass
 
 def how_much_more_should_we_earn(Brunch):
-    pass
+    cost = Brunch[0]
+    A ,B, C, D = Brunch[1],Brunch[2],Brunch[3],Brunch[4]
+    num = Brunch[5]
+    cost_A = A * num * 12
+    cost_B = B * num * 11
+    cost_C = C * num * 10
+    cost_D = D * num * 9
+    cost_sum = (cost_A+cost_B+cost_C+cost_D)/2
+    ans=""
+    if cost_sum >= cost:
+        ans = "NO"
+    else:
+        ans = "Yes"
+    return ans
 
 if __name__=="__main__":
     # 함수 테스트를 위한 코드입니다. 주석을 해제하고 실행하세요.
@@ -85,5 +98,5 @@ if __name__=="__main__":
         print("4. where_is_it_empty 테스트 통과")
     # if the_smallest_city(the_smallest_city_input) == 2.5:
     #     print("5. the_smallest_city 테스트 통과")
-    # if how_much_more_should_we_earn(how_much_more_should_we_earn_input) == "NO":
-    #     print("6. how_much_more_should_we_earn 테스트 통과")
+    if how_much_more_should_we_earn(how_much_more_should_we_earn_input) == "NO":
+        print("6. how_much_more_should_we_earn 테스트 통과")
