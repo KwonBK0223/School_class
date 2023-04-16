@@ -45,3 +45,14 @@
 # print(lst[-1])   #뒤에는 -1부터 -2, -3 ...
 # lst.remove(10)   #삭제 => 값이 있는지 없는지 먼저 체크해야됨
 # print(lst)
+
+# matrix_A = [ [1, 2] , [3, 4] ] # 중첩된 리스트
+# for v in matrix_A:
+#     for e in v:
+#         print(e)
+# print(matrix_A[0])
+# print(matrix_A[1])
+# print(matrix_A[0][0])
+# print(matrix_A[0][1])
+# print(matrix_A[1][0])
+# print(matrix_A[1][1])
